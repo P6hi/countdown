@@ -15,9 +15,13 @@ function addVowel() {
 }
 
 consonant.addEventListener('click', () => {
+    if (lettersChoice.length < 9) {
     addConsonant();
+    }
 });
 
 vowel.addEventListener('click', () => {
+    if (lettersChoice.length < 9) {
     addVowel();
-})
+    }
+});
