@@ -3,15 +3,18 @@ const vowels = ["a", "e", "i", "o", "u"];
 const lettersChoice = [];
 const consonant = document.querySelector('.consonant');
 const vowel = document.querySelector('.vowel');
+const output = document.querySelector('.letters');
 
 function addConsonant() {
     let randomNumber = Math.floor(Math.random() * consonants.length);
     lettersChoice.push(consonants[randomNumber]);
+    output.textContent += consonants[randomNumber].toUpperCase();
 }
 
 function addVowel() {
     let randomNumber = Math.floor(Math.random() * vowels.length);
     lettersChoice.push(vowels[randomNumber]);
+    output.textContent += vowels[randomNumber].toUpperCase();
 }
 
 consonant.addEventListener('click', () => {
