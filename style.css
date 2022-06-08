@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(94, 94, 255);
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}
+
+.game-container {
+    width: 80%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.letters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-content: center;
+    align-content: center;
+    height: 25vh;
+    gap: 1rem;
+    color: white
+}
+
+.letters > p {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.letter-btn {
+    padding: 1rem 2rem;
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+}
