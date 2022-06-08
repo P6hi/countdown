@@ -7,14 +7,20 @@ const output = document.querySelector('.letters');
 
 function addConsonant() {
     let randomNumber = Math.floor(Math.random() * consonants.length);
+    let letter = document.createElement('p');
+    letter.setAttribute('class', 'letter');
     lettersChoice.push(consonants[randomNumber]);
-    output.textContent += consonants[randomNumber].toUpperCase();
+    letter.textContent += consonants[randomNumber].toUpperCase();
+    output.appendChild(letter);
 }
 
 function addVowel() {
     let randomNumber = Math.floor(Math.random() * vowels.length);
+    let letter = document.createElement('p');
+    letter.setAttribute('class', 'letter');
     lettersChoice.push(vowels[randomNumber]);
-    output.textContent += vowels[randomNumber].toUpperCase();
+    letter.textContent += consonants[randomNumber].toUpperCase();
+    output.appendChild(letter);
 }
 
 consonant.addEventListener('click', () => {
