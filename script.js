@@ -19,7 +19,7 @@ function addVowel() {
     let letter = document.createElement('p');
     letter.setAttribute('class', 'letter');
     lettersChoice.push(vowels[randomNumber]);
-    letter.textContent += consonants[randomNumber].toUpperCase();
+    letter.textContent += vowels[randomNumber].toUpperCase();
     output.appendChild(letter);
 }
 
